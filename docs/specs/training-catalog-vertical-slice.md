@@ -93,7 +93,7 @@ Operações adicionais de API podem ser implementadas depois com contratos expl�
 2. Dada uma descrição ausente, quando o cadastro for enviado, então a API retorna `400` e identifica o campo `description`.
 3. Dada uma data de início ausente, quando o cadastro for enviado, então a API retorna `400` e identifica o campo `startDate`.
 4. Dada uma carga horária igual ou inferior a zero, quando o cadastro for enviado, então a API retorna `400` e identifica o campo `durationHours`.
-5. Dada uma carga horária maior que quatro, quando o cadastro ou alteração for enviado, então a API retorna `400` e identifica o campo `durationHours`.
+5. Dada uma carga horária maior que quatro, quando o `POST` ou `PUT` for enviado, então a API retorna `400` e identifica o campo `durationHours`.
 6. Dados válidos produzem `201`, um identificador e um recurso consultável depois da criação.
 7. Pela interface, dados válidos produzem confirmação e o novo item aparece na lista.
 8. Pela interface, uma falha preserva os dados preenchidos e apresenta mensagem útil.

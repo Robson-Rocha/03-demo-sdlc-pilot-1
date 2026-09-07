@@ -17,7 +17,7 @@ public sealed class TrainingUpdateTests
             "C# Avançado",
             "Tópicos avançados de C#",
             "2026-09-16",
-            4);
+            3);
 
         var response = await client.PutAsJsonAsync($"/api/trainings/{createdTraining.Id}", request);
 
